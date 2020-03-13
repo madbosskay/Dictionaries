@@ -1,0 +1,81 @@
+pop ={"Lagos": [980000, 999000, 1000024, 988001, 1001000],
+     "Kano" : [983001, 991200, 1040021, 978002, 1006060],
+     "Enugu" : [88000, 89900, 900066, 902009, 901999],
+     "Benue" : [780010, 799099, 800033,808111, 810450]
+     }
+Kano_total = sum(pop["Kano"])
+Lagos_total = sum(pop["Lagos"])
+Enugu_total = sum(pop["Enugu"])
+Benue_total = sum(pop["Benue"])
+Enugu_total
+
+
+for p in pop:
+    print(sum(pop[p]))
+
+
+max(pop)
+
+
+max(Lagos_total,Enugu_total,Benue_total,Kano_total)
+
+sumTotal = Lagos_total + Enugu_total + Kano_total + Benue_total
+
+
+
+
+PopOfEnugu = (Enugu_total/sumTotal)*100
+print(PopOfEnugu)
+
+
+
+
+import statistics
+statistics.stdev([Lagos_total, Kano_total])
+
+
+
+
+pop ={"Lagos": [980000, 999000, 1000024, 988001, 1001000],
+     "Kano" : [983001, 991200, 1040021, 978002, 1006060],
+     "Enugu" : [88000, 89900, 900066, 902009, 901999],
+     "Benue" : [780010, 799099, 800033,808111, 810450]
+     }
+pop["Lagos"][0]- 15000
+
+lag = pop["Lagos"]
+
+for year in lag:
+    final = year - 15000
+    print(final)
+
+
+
+
+pop ={"Lagos": [980000, 999000, 1000024, 988001, 1001000],
+     "Kano" : [983001, 991200, 1040021, 978002, 1006060],
+     "Enugu" : [88000, 89900, 900066, 902009, 901999],
+     "Benue" : [780010, 799099, 800033,808111, 810450]
+     }
+     import random
+r = random.randrange(0,3)
+if r == 0:
+    lag = pop["Lagos"]
+    for fig in lag:
+        print(fig - 15000)
+        
+elif r == 1:
+    kan = pop["kano"]
+    print(fig - 15000)
+
+elif r == 2:
+    enu = pop["Enugu"]
+    for fig in enu:
+        print(fig - 15000)
+
+elif r == 3:
+    ben = pop["Benue"]
+    for fig in ben:
+        print(fig - 15000)
+else:
+    print("out of range")
